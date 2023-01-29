@@ -8,14 +8,17 @@ torch 1.9.0+cu111
 
 ```
 code
-├───bert4pytorch    framework
+├───bert4pytorch    FastPTM framework
 │   ├───configs
 │   ├───models
 │   ├───optimizers
 │   ├───tests
 │   ├───tokenizers
 │   └───trainers
-├───models	
+├───models
+└───test
+    ├───g20
+    └───g40
 ```
 ## test
 1080Ti：
