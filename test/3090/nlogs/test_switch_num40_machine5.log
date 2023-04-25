@@ -1,0 +1,22 @@
+start batch test...
+
+>>[2023-01-12 15:27:41]>> python workers.py --task=worker_switch --machine=5 --num=40 --task_list=ABCDEF --isfull=1 
+
+正在进行模型切换测试"...
+GPU Memory: 0.1250MB
+Process started.
+开始发送数据...
+总任务数：240
+开始接收数据...
+接收到结果: 240
+预测总用时:128801.325毫秒
+GroupID:[1673508469202] Switching times:79, Total:103599.013(ms), Average:1311.380(ms)
+GroupID:[1673508469189] Switching times:39, Total:57432.506(ms), Average:1472.628(ms)
+GroupID:[1673508469267] Switching times:39, Total:61140.978(ms), Average:1567.717(ms)
+GroupID:[1673508469284] Switching times:39, Total:58210.140(ms), Average:1492.568(ms)
+GroupID:[1673508469363] Switching times:39, Total:57712.264(ms), Average:1479.802(ms)
+模型切换总次数:235, 总用时：338094.900(毫秒)
+最大使用显存:13207.750MB
+显存图像变化图:logs/20230112/pic/gpu_memory_20230112152955721.png
+
+========================================

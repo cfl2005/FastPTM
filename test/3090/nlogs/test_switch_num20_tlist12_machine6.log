@@ -1,0 +1,30 @@
+start batch test...
+
+>>[2023-01-13 10:41:20]>> python workers.py --task=worker_switch --machine=6 --num=20 --isfull=1 
+
+logfile: logs/20230113/task_20230113.log
+正在进行模型切换测试"...
+GPU Memory: 0.1250MB
+Process started.
+开始发送数据...
+总任务数：240
+开始接收数据...
+接收到结果: 240
+预测总用时:88852.771毫秒
+datfname: logs/20230113/20230113104255546_SWITCH_m6_g20_t240_isfull1.csv
+----------------------------------------
+超时任务数:240
+延迟时间:[11.047, 11.597, 11.557, 11.284, 11.155, 11.516, 12.712, 13.49, 14.515, 14.937, 15.133, 14.83, 14.401, 15.001, 16.421, 16.355, 17.815, 17.562, 17.396, 17.098]
+按时任务数:0
+延迟时间:[]
+GroupID:[1673577689054] Switching times:39, Total:65580.914(ms), Average:1681.562(ms)
+GroupID:[1673577688997] Switching times:39, Total:66726.822(ms), Average:1710.944(ms)
+GroupID:[1673577689007] Switching times:39, Total:66992.279(ms), Average:1717.751(ms)
+GroupID:[1673577689149] Switching times:39, Total:66720.298(ms), Average:1710.777(ms)
+GroupID:[1673577689009] Switching times:39, Total:65696.200(ms), Average:1684.518(ms)
+GroupID:[1673577689141] Switching times:39, Total:67086.868(ms), Average:1720.176(ms)
+模型切换总次数:234, 总用时：398803.380(毫秒)
+最大使用显存:15848.750MB
+显存图像变化图:logs/20230113/pic/gpu_memory_20230113104255552.png
+
+========================================
