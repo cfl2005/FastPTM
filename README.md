@@ -48,7 +48,7 @@ python workers.py --task=fcfs_test --machine=8 --num=20
 Note: A total of 20 groups of multi-tenant requests containing 12 types of tasks in each group.
 ```
 
-3. Impact of fast weight loading (Figure. 4)
+2. Impact of fast weight loading (Figure. 4)
   
 Turn on MPS:
 ``` 
@@ -79,7 +79,9 @@ cd 3090
 ./test_switch.sh 6 > nlogs/no_mps/test_switch_machine_6.log
 python log2xls.py –task=switch –logfile=./switch_3090.log
 ```
-5. Impact of online multi-list scheduling (Figure. 5 and 6)
+
+3. Impact of online multi-list scheduling (Figure. 5 and 6)
+
 (1) In NVIDIA GTX 1080Ti:
 ```
 cd g20
@@ -88,7 +90,9 @@ python log2xls.py –-task=mu –-logfile=task_mu005_202301.log
 python log2xls.py –-task=mu –-logfile=task_mu008_202301.log
 python log2xls.py –-task=mu –-logfile=task_mu010_202301.log
 ```
+
 (2) In NVIDIA RTX 3090:
+
 ```
 cd code1/g20
 ./test_task_3090.sh 202302
@@ -96,7 +100,7 @@ python log2xls.py –-task=mu –-logfile=task_mu005_202302.log
 python log2xls.py –-task=mu –-logfile=task_mu008_202302.log
 python log2xls.py –-task=mu –-logfile=task_mu010_202302.log
 ```
-7. Overall Performance of FastPTM (Figure.7)
+4. Overall Performance of FastPTM (Figure.7)
 
 (1) In NVIDIA GTX 1080Ti:
 
