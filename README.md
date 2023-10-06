@@ -49,13 +49,18 @@ Note: A total of 20 groups of multi-tenant requests containing 12 types of tasks
 ```
 
 3. Impact of fast weight loading (Figure. 4)
+  
 Turn on MPS:
+``` 
 export CUDA_VISIBLE_DEVICES=0 nvidia-smi -i 0 -c EXCLUSIVE_PROCESS nvidia-cuda-mps-control -d
+``` 
 Turn off MPS:
+``` 
 echo quit | nvidia-cuda-mps-control nvidia-smi -i 0 -c DEFAULT
-(1) In NVIDIA GTX 1080Ti:
-cd 1080
 ```
+(1) In NVIDIA GTX 1080Ti:
+```
+cd 1080
 ./test_switch.sh 1 > nlogs
 ./test_switch_machine_1.log
 ./test_switch.sh 2 > nlogs/test_switch_machine_2.log
@@ -92,20 +97,26 @@ python log2xls.py –-task=mu –-logfile=task_mu008_202302.log
 python log2xls.py –-task=mu –-logfile=task_mu010_202302.log
 ```
 7. Overall Performance of FastPTM (Figure.7)
+
 (1) In NVIDIA GTX 1080Ti:
+
 Full model loading:
 ```
 python workers.py –task=fcfs_test –machine=3 –num=20
 ```
+
 FastPTM:
 ```
 python workers.py –task=omls –machine=3 –taskfile=../task_data/g2/167281892465_dat_T240_L12_M0.10.json
 ```
+
 (2) In NVIDIA RTX 3090:
+
 Full model loading:
 ```
 python workers.py –task=fcfs_test –machine=6 –num=20
 ```
+
 FastPTM:
 ```
 python workers.py –task=omls –machine=6 –taskfile= ../task_data/g2/167281892465_dat_T240_L12_M0.10.json
