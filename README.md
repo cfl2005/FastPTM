@@ -40,7 +40,7 @@ client = FastPTM_Client()
 ```
 python workers.py --task=fcfs_test --machine=1 --num=20
 python workers.py --task=fcfs_test --machine=2 --num=20
-pythonworkers.py --task=fcfs_test --machine=3 –-num=20
+python workers.py --task=fcfs_test --machine=3 –-num=20
 python workers.py --task=fcfs_test --machine=4 --num=20
 python workers.py --task=fcfs_test --machine=5 --num=20
 python workers.py --task=fcfs_test --machine=6 --num=20
