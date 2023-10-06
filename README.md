@@ -66,7 +66,7 @@ cd 1080
 ./test_switch_machine_1.log
 ./test_switch.sh 2 > nlogs/test_switch_machine_2.log
 ./test_switch.sh 3 > nlogs/test_switch_machine_3.log
-python log2xls.py –task=switch –logfile=./switch_1080.log
+python log2xls.py –-task=switch –-logfile=./switch_1080.log
 Note: log2xls.py is used to extract log results and gen- erate Excel sheet files.
 ```
 (2) In NVIDIA RTX 3090:
@@ -78,7 +78,7 @@ cd 3090
 ./test_switch.sh 4 > nlogs/no_mps/test_switch_machine_4.log
 ./test_switch.sh 5 > nlogs/no_mps/test_switch_machine_5.log
 ./test_switch.sh 6 > nlogs/no_mps/test_switch_machine_6.log
-python log2xls.py –task=switch –logfile=./switch_3090.log
+python log2xls.py –-task=switch –-logfile=./switch_3090.log
 ```
 
 ### Impact of online multi-list scheduling (Figure. 5 and 6)
