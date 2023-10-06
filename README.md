@@ -107,22 +107,22 @@ python log2xls.py –-task=mu –-logfile=task_mu010_202302.log
 
 Full model loading:
 ```
-python workers.py –task=fcfs_test –machine=3 –num=20
+python workers.py –-task=fcfs_test –-machine=3 –-num=20
 ```
 
 FastPTM:
 ```
-python workers.py –task=omls –machine=3 –taskfile=../task_data/g2/167281892465_dat_T240_L12_M0.10.json
+python workers.py –-task=omls –-machine=3 –-taskfile=../task_data/g2/167281892465_dat_T240_L12_M0.10.json
 ```
 
 (2) In NVIDIA RTX 3090:
 
 Full model loading:
 ```
-python workers.py –task=fcfs_test –machine=6 –num=20
+python workers.py –-task=fcfs_test –-machine=6 –-num=20
 ```
 
 FastPTM:
 ```
-python workers.py –task=omls –machine=6 –taskfile= ../task_data/g2/167281892465_dat_T240_L12_M0.10.json
+python workers.py –-task=omls –-machine=6 –-taskfile=../task_data/g2/167281892465_dat_T240_L12_M0.10.json
 ```
