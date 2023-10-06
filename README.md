@@ -35,7 +35,8 @@ client = FastPTM_Client()
 ```
 
 ## test
-1. Impact of number of parallel instances (Figure. 3)
+
+### Impact of number of parallel instances (Figure. 3)
 ```
 python workers.py --task=fcfs_test --machine=1 --num=20
 python workers.py --task=fcfs_test --machine=2 --num=20
@@ -48,7 +49,7 @@ python workers.py --task=fcfs_test --machine=8 --num=20
 Note: A total of 20 groups of multi-tenant requests containing 12 types of tasks in each group.
 ```
 
-2. Impact of fast weight loading (Figure. 4)
+### Impact of fast weight loading (Figure. 4)
   
 Turn on MPS:
 ``` 
@@ -80,7 +81,7 @@ cd 3090
 python log2xls.py –task=switch –logfile=./switch_3090.log
 ```
 
-3. Impact of online multi-list scheduling (Figure. 5 and 6)
+### Impact of online multi-list scheduling (Figure. 5 and 6)
 
 (1) In NVIDIA GTX 1080Ti:
 ```
@@ -100,7 +101,7 @@ python log2xls.py –-task=mu –-logfile=task_mu005_202302.log
 python log2xls.py –-task=mu –-logfile=task_mu008_202302.log
 python log2xls.py –-task=mu –-logfile=task_mu010_202302.log
 ```
-4. Overall Performance of FastPTM (Figure.7)
+### Overall Performance of FastPTM (Figure.7)
 
 (1) In NVIDIA GTX 1080Ti:
 
